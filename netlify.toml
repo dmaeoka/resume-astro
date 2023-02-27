@@ -1,7 +1,7 @@
 # Configure Netlify builds.
 [build]
   publish = "dist/"
-  command = "pnpm run astro:build"
+  command = "npm run astro:build"
 
 # Request bots not to index the admin section.
 [[headers]]
