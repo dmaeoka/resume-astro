@@ -9,8 +9,7 @@
 		"astro:start": "astro dev",
 		"astro:build": "astro build",
 		"astro:preview": "astro preview",
-		"dev": "astro dev",
-		"netlify": "npx netlify-cms-proxy-server"
+		"dev": "astro dev"
 	},
 	"dependencies": {
 		"@alpinejs/collapse": "^3.11.1",
