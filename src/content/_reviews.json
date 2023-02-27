@@ -1,0 +1,13 @@
+{
+  "title": "What People Say About Me",
+  "thumbnail": "/img/wellness-walk-and-talk-day.webp",
+  "description": "Here's something what my colleagues and clients have said about me and my work.",
+  "colleague": [
+    {
+      "author": "SANJAY MAHARJAN",
+      "avatar": "/img/0.jpeg",
+      "position": "Head of UI at Infomentum",
+      "review": "Diego is a huge asset to the team. He is incredibly talented and has an impressive array of skillsets. He is diligent, versatile and consistently outdoes himself. He is always a pleasure to work with and undoubtedly adds value to any team he is involved in."
+    }
+  ]
+}

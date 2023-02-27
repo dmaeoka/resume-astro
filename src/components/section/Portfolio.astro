@@ -1,0 +1,68 @@
+---
+import Zigzag from "@components/base/Zigzag.astro";
+const portfolio = await Astro.glob('../../content/_portfolio.json')
+const {title, description, projects } = portfolio[0]
+---
+
+<section
+	id="section-portfolio"
+	class="section-portfolio bg-white text-gray-900 relative z-10"
+	x-intersect.half="activeStep = 'portfolio'">
+	<div class="container xl:px-0 px-5 py-24 relative z-10" x-intersect.half="showBackButton = true">
+		<div class="section-portfolio--boxTitle mb-4 relative">
+			<div class="text-gray-500">
+				<h2 class="font-display capitalize font-bold leading-none text-4xl text-gray-700 pb-4">
+					{title}
+					<Zigzag />
+				</h2>
+				<p class="md:max-w-xl" set:html={description}></p>
+			</div>
+			<div class="section-title black font-black text-right uppercase text-xl absolute right-0 bottom-0">Portfolio.</div>
+		</div>
+		<div class="flex flex-no-wrap -mx-2 overflow-x-auto">
+			{
+				projects.map(item => (
+					<div class="section-portfolio-item flex-shrink-0 md:w-1/5 w-1/2 mx-2 mb-0 bg-gray-900">
+						<figure class="overflow-hidden">
+							<a href={item.thumbnail} target="_blank">
+								<img
+									class="section-portfolio-item--img"
+									src={item.thumbnail}
+									alt={`A preview of ${item.title}`}
+									width="310"
+									height="256"
+									loading="lazy" />
+							</a>
+						</figure>
+						<span class="p-5 block">
+							<div class="font-display font-black text-red-600 uppercase">{item.title}</div>
+							<div class="text-gray-500 text-sm">- {item.description}</div>
+						</span>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style lang="scss">
+	.section-portfolio {
+
+		&--title {
+			font-size: 90px;
+			line-height: 0.65;
+			color: rgba(#2d3748, .05);
+		}
+
+		&-item {
+			min-width: 12rem;
+
+			&--img {
+				min-width: 100%;
+				height: 16rem;
+				object-fit: cover;
+				object-position: top;
+			}
+		}
+	}
+</style>

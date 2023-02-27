@@ -1,0 +1,33 @@
+{
+  "sitename": "Diego Maeoka",
+  "sitedescription": "Hi, my name is Diego Maeoka and I'm a passionate web designer!",
+  "siteicon": "/img/favicon.png",
+  "background": "/img/bg.svg",
+  "menu": [
+    {
+      "name": "Home",
+      "icons": "lnr-home",
+      "link": "#section-home"
+    },
+    {
+      "name": "About Me",
+      "icons": "lnr-user",
+      "link": "#section-about"
+    },
+    {
+      "name": "Services",
+      "icons": "lnr-star",
+      "link": "#section-services"
+    },
+    {
+      "name": "Portfolio",
+      "icons": "lnr-briefcase",
+      "link": "#section-portfolio"
+    },
+    {
+      "name": "Contact",
+      "icons": "lnr-envelope",
+      "link": "#section-contact"
+    }
+  ]
+}

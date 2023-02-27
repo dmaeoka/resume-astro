@@ -1,0 +1,15 @@
+---
+import DiagonalLine from "@components/base/DiagonalLine.astro";
+const date = new Date().getFullYear()
+---
+
+<footer class="relative pt-8 pb-6">
+	<DiagonalLine class="text-gray-900" />
+	<div class="container mx-auto">
+		<div class="w-full md:w-6/12 px-4 mx-auto text-center">
+			<div class="copyright text-sm text-gray-500 py-1 uppercase font-display">
+				Copyright © { date } DIEGO MAEOKA.
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,174 @@
+{
+  "title": "My Portfolio",
+  "description": "Here's a small hint of what I have done already!",
+  "projects": [
+    {
+      "title": "Intranet Boticario",
+      "thumbnail": "/img/0d82c30a8b25456ba85760d2ab8fcc01.png",
+      "description": "Intranet developed for Boticário group. I created the pages in psd, then in HTML and implemented in Sharepoint 2010.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Chame o Chef",
+      "thumbnail": "/img/063b6cd2598447c7a501b374aab21618.png",
+      "description": "I created an ecommerce for chef de cuisine. U can schedule a meal, and they go to your home. All based on the region and availability of chefs' hours. The client schedules and pays directly for the site. Logo creation, mockup, and implementation in PHP / Wordpress.",
+      "job": "Branding & Development & E-commerce"
+    },
+    {
+      "title": "Compara Câmbio",
+      "thumbnail": "/img/bf8a87bdaccb433985d8bf027bda9566.png",
+      "description": "Personal project. Creation of an aggregator of exchange houses, with a comparison of currencies, rates and values, based on users region. Developed in PHP/Slim, Mysql and AngularJs.",
+      "job": "Branding & Development"
+    },
+    {
+      "title": "Corra Melhor",
+      "thumbnail": "/img/d620cb48acca45c4a184c89f2df06034.png",
+      "description": "Ebook Sale Project and training for beginners in street running, with a blog on the subject. Developed in PHP / Wordpress",
+      "job": "Branding & Development"
+    },
+    {
+      "title": "Fatuche Burguer",
+      "thumbnail": "/img/75c2dc73b271471fa084ee1b7783137c.png",
+      "description": "Hotsite for the restaurant Fatuche Burger. I did the psd, html, and after integrated in AngularJs. Developed in PHP, Mysql and AngularJs.",
+      "job": "Desgin & Development"
+    },
+    {
+      "title": "Intranet FIEP",
+      "thumbnail": "/img/10c1c78a488a4c80a672c0f9619c285e.png",
+      "description": "Development of the Intranet of the Federação das Indústrias do Estado do Paraná. I did the PSD, HTML mockup, and subsequently implemented in Sharepoint 2010.",
+      "job": "Design & Development"
+    },
+    {
+      "title": "Flor do Dia - Floricultura",
+      "thumbnail": "/img/97f9a74b0ded4bf291f5ed4cd29e40ef.png",
+      "description": "Development of the floriculture website Flor do Dia, for the agency Pulpa do Design. Developed in PHP/Wordpress and Mysql.",
+      "job": "Development"
+    },
+    {
+      "title": "GRC",
+      "thumbnail": "/img/cb8c7130fe1d48a68a81c62d2e19865c.png",
+      "description": "Development of a HelpDesk solution - FrontEnd, to be integrated in the <a href='http://glpi-project.org/'>GLPI Project</a>, by REST. Developed in PHP/Slim, Mysql e AngularJs.",
+      "job": "Design & Development"
+    },
+    {
+      "title": "HBSIS - GCAD",
+      "thumbnail": "/img/9dd9b4e1c64a4f93b175527ee1791db4.png",
+      "description": "Creation and Development of a mobile application for contract control for the HBSIS company. Developed in HTML/CSS3.",
+      "job": "Mobile Design"
+    },
+    {
+      "title": "Hotsite Webcenter Portal",
+      "thumbnail": "/img/8c01d6eb838049fe96d2cecc2bfaff0a.png",
+      "description": "Creation of the Oracle Webcenter Portal product hotsite, with product information and technical specifications, for the sales team. Developed in HTML.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Ibema",
+      "thumbnail": "/img/937e00d0d91847a9a05bc3770efb87b5.png",
+      "description": "Creation and development of the Ibema website. Developed in PHP/Mysql.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "IDM 365",
+      "thumbnail": "/img/00fa6ad80960403e9454ff8b31ec0ed5.png",
+      "description": "Creation of a hotsite for the IDM 365 product, with technical information for the sales area. Developed in HTML.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Illimitati",
+      "thumbnail": "/img/3ef14a1c8ed540c08adc59f4178f21f5.png",
+      "description": "Website for the company illimitati, with descriptive about the company, products and services. I created the website in PSD, after a mockup and then developed in Wordpress. Developed in PHP/Wordpress.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Intranet IT7",
+      "thumbnail": "/img/469ae1b57544465d8289344892154bd9.png",
+      "description": "Intranet for IT7 company. Using ADF and Oracle Webcenter Portal and javascript. Developed in Java, ADF e JS.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Intranet Illimitati",
+      "thumbnail": "/img/99159ad348594225839e1ecb1ca6b29d.png",
+      "description": "Demonstrative intranet for the illimitati company, using Liferay 6.2 technology. Developed in Java, SCSS, JS, LDAP.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "IPC",
+      "thumbnail": "/img/1cb7b18b71e64a1faec5b2a2fa39cc22.png",
+      "description": "Website for the Instituto Paranaense de Cegos (IPC). It was developed as a partnership with the institute, so it was tested directly for the blind and low vision public, in order to demonstrate that accessible sites can also be aesthetically pleasing. Developed in PHP/Wordpress.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Lilica e Tigor",
+      "thumbnail": "/img/62521276ffb747c78b01a94c2596290c.png",
+      "description": "Website developed for the season promotion Lilica & Tigor, for the Agência Combo client. Developed in PHP, Mysql e JS.",
+      "job": "Development"
+    },
+    {
+      "title": "Loja Marceneiro",
+      "thumbnail": "/img/15e04bf897c94f3e805e59b7b9a7222a.png",
+      "description": "Ecommerce developed for the company Loja Marceneiro. I developed the PSD, after a HTML mockup and later integrated to the wordpress, using eccommerce tools to integrate with payment. Developed in PHP/Wordpress e JS.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Moradas Clássicas Tingui",
+      "thumbnail": "/img/0c567d296a854ee78a4e85d488279b94.png",
+      "description": "Hotsite for a property launch. Static site only with product images. Developed in HTML e JS.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Piui Abacaxi",
+      "thumbnail": "/img/0819d6690dfb4a9383b7effe9475638e.png",
+      "description": "Institutional site of the children's clothing store Piui Abacaxi. Creation of design, mockup in HTML and later developed in Wordpress. Developed in PHP/Wordpress e Js.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Positivo EBS",
+      "thumbnail": "/img/7f37d88d928c4717938ba3865454c618.png",
+      "description": "Creation of template for Oracle E-Business Suite, for Positivo company. Developed in HTML e JS",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Quero Praticar",
+      "thumbnail": "/img/ad119dfcb2984db89fcd1949ac98b603.png",
+      "description": "Personal project to add activities to a map, integrated to google places. Showing the location of activities by user region. Developed in HTML, PHP e AngularJs.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Renner",
+      "thumbnail": "/img/7bdeeebf277b46ccb4f59e7e896253e0.png",
+      "description": "Creation and development of template for Renner client. Developed in HTML e AngularJs.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Palladium Office",
+      "thumbnail": "/img/bd4c73c3b9de435b87fb87b9f62ee23a.png",
+      "description": "Creation of Hotsite for the client Diego Rossetto. Real estate ad page of the Palladium Office. Developed in HTML e JS.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Stelo",
+      "thumbnail": "/img/5be5ca71a4e64f09b80d6f3a47a8ebe8.png",
+      "description": "Creation of checkout pages for the Stelo customer. Developed in HTML e JS.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Corporate TV",
+      "thumbnail": "/img/5301cf93c5c54c1babca218fa158cecd.png",
+      "description": "Corporate channel for television. Based on the company's intranet, content is extracted via the REST and consumed by JS. Developed in Java, ADF e AngularJs.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Intranet Uninter",
+      "thumbnail": "/img/9b1fb45fe0df4090a5bff1bc512c0274.png",
+      "description": "Creation of the Uninter intranet. Developed in HTML and Js, later implemented in Sharepoint 2010.",
+      "job": "WebDesign & Development"
+    },
+    {
+      "title": "Vitrines Off",
+      "thumbnail": "/img/e31a00d10c23405aa9a99f653e58f423.png",
+      "description": "Ecommerce design based on user location. Logo creation, design and development. Partner stores register their products via the front-end and make available on the site. User only sees the products of your city or region. Developed in PHP/Wordpress.",
+      "job": "Branding & Development & E-commerce"
+    }
+  ]
+}

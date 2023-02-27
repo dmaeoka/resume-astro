@@ -1,0 +1,67 @@
+---
+import Zigzag from "@components/base/Zigzag.astro";
+const reviews = await Astro.glob('../../content/_reviews.json')
+const {title, description, thumbnail, colleague } = reviews[0]
+---
+
+<section
+	id="section-reviews"
+	class="section-reviews min-h-screen relative z-10"
+	x-intersect.half="activeStep = 'reviews'">
+	<div class="container xl:px-0 px-5 py-16" x-intersect.half="showBackButton = true">
+		<div class="section-reviews--boxTitle md:flex flex-wrap mb-10 relative">
+			<div class="flex-1">
+				<h2 class="font-display capitalize font-bold leading-none text-4xl pb-4">
+					{title}
+					<Zigzag />
+				</h2>
+				<p class="md:max-w-xl" set:html={description}></p>
+			</div>
+			<div class="section-title white font-black text-right uppercase text-xl absolute right-0 bottom-0">REVIEWS.</div>
+		</div>
+
+		<div class="md:flex -mx-5">
+			<div class="md:w-2/5 px-5 flex-shrink-0 hidden lg:block">
+				<img
+					src={thumbnail}
+					class="rounded bg-blue-200 w-full md:mb-0 mb-4"
+					alt="A picture of me and my colleagues"
+					loading="lazy" />
+			</div>
+			<div class="px-5 flex">
+				<div class="md:flex flex-wrap -mx-5 -mb-5">
+					{
+						colleague.map(item => (
+							<div class="md:w-1/2 mb-5 px-5">
+								<div class="p-8 text-gray-900 rounded-xl bg-white shadow-2xl">
+									<i class="lnr lnr-pushpin block text-center mb-5 text-5xl"></i>
+									<blockquote class="text-center leading-relaxed italic review">
+										<p set:html={item.review}></p>
+									</blockquote>
+									<div class="flex border-t border-gray-700 mt-5 pt-5">
+										<img
+											src={item.avatar}
+											class="bg-white mr-5 flex-shrink-0 rounded-full"
+											alt={item.author}
+											style="width:50px;height:50px"
+											loading="lazy" />
+										<div class="text-sm">
+											<div class="font-display text-red-600 uppercase font-black">{item.author}</div>
+											<div class="text-gray-500">- {item.position}</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style lang="scss">
+	.review {
+		letter-spacing: .5px;
+	}
+</style>

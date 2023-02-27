@@ -1,0 +1,32 @@
+---
+
+---
+<section
+	id="section-home"
+	class="section-home md:bg-cover bg-contain bg-fixed bg-no-repeat relative md:h-screen flex flex-col justify-center"
+	x-intersect.half="activeStep = 'home'">
+	<div class="section-home--intro max-w-4xl px-3 relative z-10 m-auto" x-intersect.half="showBackButton = false">
+		<h1 class="section-home--title md:text-6xl text-4xl font-bold text-white leading-none">Hey there! <br> <span class="highlight red">I'm Diego Maeoka</span> <br>Independent <span class="text-orange-500">Web Designer</span></h1>
+	</div>
+</section>
+
+<style lang="scss">
+	.section-home {
+		background-image: url("/img/illustrations/bg.svg");
+		background-position: 100% 0%;
+		min-height: calc(100vh - 5rem);
+		@media (min-width: 768px) {
+			background-position: 100% 110%;
+		}
+
+		&--text {
+			background: rgba(0, 0, 0, 0.4);
+			color: rgba(255, 255, 255, 0.7);
+			letter-spacing: 6px;
+		}
+
+		&--btn {
+			letter-spacing: 6px;
+		}
+	}
+</style>

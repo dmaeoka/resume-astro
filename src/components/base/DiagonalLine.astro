@@ -1,0 +1,25 @@
+---
+let { class: className } = Astro.props;
+className = className.split(" ")
+className.push("fill-current")
+---
+
+<div
+	class="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none z-10"
+	style="height: 80px; transform: translateZ(0px);"
+>
+	<svg
+		class="absolute bottom-0 overflow-hidden"
+		xmlns="http://www.w3.org/2000/svg"
+		preserveAspectRatio="none"
+		version="1.1"
+		viewBox="0 0 2560 100"
+		x="0"
+		y="0"
+	>
+		<polygon
+			class:list={className}
+			points="2560 0 2560 100 0 100"
+		></polygon>
+	</svg>
+</div>

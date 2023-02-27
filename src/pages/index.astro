@@ -1,0 +1,25 @@
+---
+import Layout from "@layouts/Default.astro";
+import Home from "@components/section/Home.astro";
+import About from "@components/section/About.astro";
+import Services from "@components/section/Services.astro";
+import Portfolio from "@components/section/Portfolio.astro";
+import Reviews from "@components/section/Reviews.astro";
+import Contact from "@components/section/Contact.astro";
+const info = await Astro.glob('../content/setup/_info.json')
+---
+
+<Layout
+	title={info[0].sitename}
+	description={info[0].sitedescription}
+	icon={info[0].siteicon}
+	menu={info[0].menu}>
+	<div class="md:ml-20 overflow-hidden pt-20 md:pt-0">
+		<Home />
+		<About />
+		<Services />
+		<Portfolio />
+		<Reviews />
+		<Contact />
+	</div>
+</Layout>

@@ -1,0 +1,41 @@
+{
+  "title": "I'm In The Design Industry With 12 Years Of Experience.",
+  "intro": "Hello! I’m Diego Maeoka, senior Web Developer specialised in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including Java, JavaScript (ES6), Typescript, PHP, SQL, NoSQL, CSS3, HTML5 and many development frameworks, such as Liferay, Oracle ADF, Wordpress, jQuery, AngularJs / Ionic, Zend, Slim PHP, Gulp.\n\nKnowledge in many Oracle products such as Oracle OAM, OIM, UCM and WebCenter Portal too.\n\nCurrently living in London. I graduated in 2011 and since 2008 I work with design, programming, focusing on front-end developing.\n\n```\nconsole.log('hello world')\n```",
+  "subtitle": "HELLO, I'M DIEGO MAEOKA",
+  "cv": "/img/favicon.png",
+  "skills": [
+    {
+      "name": "PHOTOSHOP, ILLUSTRATOR, SKETCH, ADOBE XD & FIGMA",
+      "percentage": 90
+    },
+    {
+      "name": "HTML5, CSS3, POSTCSS, SASS & SCSS",
+      "percentage": 95
+    },
+    {
+      "name": "JAVASCRIPT, NODEJS, REACTJS, VUEJS & ANGULAR",
+      "percentage": 85
+    },
+    {
+      "name": "PHP, LARAVEL, JOOMLA & WORDPRESS",
+      "percentage": 82
+    },
+    {
+      "name": "ORACLE WEBCENTER PORTAL, ORACLE WEBCENTER SITES, LIFERAY PORTAL",
+      "percentage": 75
+    },
+    {
+      "name": "GIT & BITBUCKET PIPELINES",
+      "percentage": 90
+    },
+    {
+      "name": "GULP JS & WEBPACK",
+      "percentage": 90
+    },
+    {
+      "name": "SQL & NOSQL",
+      "percentage": 77
+    }
+  ],
+  "thumbnail": "/img/me.jpg"
+}

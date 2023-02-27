@@ -1,0 +1,123 @@
+---
+import showdown from 'showdown';
+const about = await Astro.glob('../../content/_about.json')
+let {title, subtitle, intro, thumbnail, skills, cv } = about[0]
+const converter = new showdown.Converter()
+intro = converter.makeHtml(intro)
+---
+
+<section
+	id="section-about"
+	class="section-about md:bg-cover bg-contain bg-no-repeat bg-white text-gray-900 relative min-h-screen"
+	x-intersect.half="activeStep = 'about'">
+	<div class="container pb-24" x-intersect.half="showBackButton = true">
+		<h2 class="section-about--title font-black text-center uppercase">About me</h2>
+		<div class="md:flex w-full xl:px-0 px-5">
+			<div class="w-full md:w-1/3 mb-4 md:mb-0 hidden md:block">
+				<img
+					class="rounded-r-full"
+					src={thumbnail}
+					loading="lazy"
+					alt="A nice picture of me, trust me!" />
+			</div>
+			<div class="w-full md:w-2/3">
+				<div class="md:ml-10 lg:w-3/4 ">
+					<div class="section-about--intro font-display text-xs uppercase mb-10">{subtitle}</div>
+					<div class="section-about--me capitalize font-bold mb-10 leading-none text-4xl text-gray-700">{title}</div>
+					<div class="section-about--description text-gray-900">
+						<Fragment set:html={intro} />
+					</div>
+
+					<div class="skills mt-10">
+						{
+							skills.map(item => (
+								<div class="skill-item mb-5">
+									<div class="font-display font-bold text-sm uppercase mb-2 text-gray-800 pr-12 lg:pr-0">{item.name}</div>
+									<div class="relative w-full bg-red-200 h-1 rounded">
+										<div class="relative h-full bg-red-500 flashing rounded delay--1" style={`width:${item.percentage}%`}><span class="skill-item--tooltip absolute inline-block bg-red-500 p-1 text-white text-xs rounded-sm">{item.percentage}%</span></div>
+									</div>
+								</div>
+							))
+						}
+					</div>
+					<a
+						href={cv}
+						target="_blank"
+						class="font-display text-xs uppercase mt-8 bg-red-600 hover:bg-red-900 rounded-full text-white inline-block py-4 px-8 btn"
+					>DOWNLOAD CV</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style lang="scss" is:global>
+	.flashing {
+		transform-origin: left;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-name: flash;
+		animation-fill-mode: both;
+
+		$i: 1;
+		@while $i <=10 {
+			&.delay--#{$i} {
+				animation-delay: #{$i}s;
+			}
+			$i: $i+1;
+		}
+	}
+
+	@keyframes flash {
+		from {
+			transform: scaleX(0);
+		}
+
+		to {
+			transform: scaleX(1);
+		}
+	}
+
+	.section-about {
+		background-image: url("/img/illustrations/bg-2.svg");
+		background-position: 0% 109%;
+
+		@media (min-width: 768px) {
+			background-position: -9.6rem 0px;
+		}
+
+		&--title {
+			font-size: 60px;
+			color: rgba(#060039, .1);
+
+			@media (min-width: 768px) {
+				font-size: 90px;
+			}
+		}
+
+		&--intro {
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 3px;
+			color: #666;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+
+		&--description {
+
+			p {
+				margin-bottom: 0.5rem;
+			}
+		}
+
+		.skill {
+			&-item {
+				&--tooltip {
+					bottom: 10px;
+					left: calc(100% - 14px);
+				}
+			}
+		}
+	}
+</style>

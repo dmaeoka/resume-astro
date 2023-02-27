@@ -1,0 +1,30 @@
+{
+	"title": "I Provide These Services",
+	"description": "I can say I am versatile professional! From graphic and branding to more complex development solutions! ",
+	"service": [
+		{
+			"title": "WEB DESIGN",
+			"description": "I develop websites in HTML5 and CSS3. Using CSS frameworks such as Bootstrap, Susy, Skeleton, among others, which greatly increases productivity.",
+			"icon": "lnr-laptop-phone",
+			"icons": "lnr-laptop-phone"
+		},
+		{
+			"title": "PRINT & BRANDING",
+			"description": "I create and develop brands, printed layouts, such as magazines, posters, folders and cards.",
+			"icon": "lnr-printer",
+			"icons": "lnr-printer"
+		},
+		{
+			"title": "MARKETING/SEO",
+			"description": "I help with company marketing and content optimization for search engines, as Google and Bing.",
+			"icon": "lnr-magic-wand",
+			"icons": "lnr-magic-wand"
+		},
+		{
+			"title": "DEVELOPMENT",
+			"description": "I can work with several technologies. I have solid knowledge in PHP, CSS, SQL, NoSql and Javascript.",
+			"icon": "lnr-coffee-cup",
+			"icons": "lnr-coffee-cup"
+		}
+	]
+}
