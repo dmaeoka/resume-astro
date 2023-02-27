@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import mdx from "@astrojs/mdx";
-import node from "@astrojs/node";
 import NetlifyCMS from 'astro-netlify-cms';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
@@ -185,11 +184,7 @@ export default defineConfig({
 	markdown: {
 		drafts: true,
 	},
-	output: 'server',
 	integrations: [
-		node({
-			mode: 'standalone',
-		}),
 		// partytown(),
 		mdx({
 			drafts: true
