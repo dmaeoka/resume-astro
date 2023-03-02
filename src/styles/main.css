@@ -1,10 +1,11 @@
+@import "animate.css/animate.css";
+@import "./modules/fonts.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-	@import "animate.css/animate.css";
-	@import "./modules/fonts.css";
 
 	body {
 		@apply font-body;
@@ -34,16 +35,16 @@
 .highlight {
 	display: inline-block;
 	background: no-repeat;
+}
 
-	&.red {
-		background-position-y: 0;
-		background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#e53855 50%,#e53855);
-	}
+.highlight.red {
+	background-position-y: 0;
+	background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#e53855 50%,#e53855);
+}
 
-	&.black {
-		background-position-y: 0;
-		background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#060039 50%,#060039);
-	}
+.highlight.black {
+	background-position-y: 0;
+	background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#060039 50%,#060039);
 }
 
 
