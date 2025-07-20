@@ -1,16 +1,13 @@
+@config "../../tailwind.config.mjs";
+@import "tailwindcss";
 @import "animate.css/animate.css";
 @import "./modules/fonts.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base, components, utilities;
 
 @layer base {
-
 	body {
-		@apply font-body;
-		@apply bg-gray-900;
-		@apply text-white;
+		@apply bg-gray-900 text-white;
 	}
 }
 
@@ -18,48 +15,41 @@
 	[x-cloak] {
 		display: none !important;
 	}
+}
 
-	.tw-accessibility {
-		@apply outline-none focus-visible:outline-dashed focus-visible:outline-muted-300 dark:focus-visible:outline-muted-600 focus-visible:outline-offset-2;
+@layer components {
+	.btn {
+		letter-spacing: 6px;
 	}
 
-	.tw-accessibility-static {
-		@apply outline-dashed outline-muted-300 dark:outline-muted-600 outline-offset-2;
+	.highlight {
+		display: inline-block;
+		background: no-repeat;
 	}
-}
 
-.btn {
-	letter-spacing: 6px;
-}
+	.highlight.red {
+		background-position-y: 0;
+		background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#e53855 50%,#e53855);
+	}
 
-.highlight {
-	display: inline-block;
-	background: no-repeat;
-}
+	.highlight.black {
+		background-position-y: 0;
+		background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#060039 50%,#060039);
+	}
 
-.highlight.red {
-	background-position-y: 0;
-	background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#e53855 50%,#e53855);
-}
+	.section-title {
+		font-size: 90px;
+		line-height: 0.65;
+		cursor: default;
+	}
 
-.highlight.black {
-	background-position-y: 0;
-	background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 49.9%,#060039 50%,#060039);
-}
+	.section-title.black {
+		@apply text-gray-900;
+		--tw-text-opacity: .06;
+	}
 
-
-.section-title {
-	font-size: 90px;
-	line-height: 0.65;
-	cursor: default;
-}
-
-.section-title.black {
-	@apply text-gray-900;
-	--tw-text-opacity: .06;
-}
-
-.section-title.white {
-	@apply text-white;
-	--tw-text-opacity: .2;
+	.section-title.white {
+		@apply text-white;
+		--tw-text-opacity: .2;
+	}
 }

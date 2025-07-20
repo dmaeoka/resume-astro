@@ -1,41 +1,57 @@
 {
-  "title": "I'm In The Design Industry With 12 Years Of Experience.",
-  "intro": "Hello! I’m Diego Maeoka, senior Web Developer specialised in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including Java, JavaScript (ES6), Typescript, PHP, SQL, NoSQL, CSS3, HTML5 and many development frameworks, such as Liferay, Oracle ADF, Wordpress, jQuery, AngularJs / Ionic, Zend, Slim PHP, Gulp.\n\nKnowledge in many Oracle products such as Oracle OAM, OIM, UCM and WebCenter Portal too.\n\nCurrently living in London. I graduated in 2011 and since 2008 I work with design, programming, focusing on front-end developing.\n\n```\nconsole.log('hello world')\n```",
+  "title": "I'm In The Design Industry With 15 Years Of Experience.",
+  "intro": "I am a certified Salesforce Developer and Administrator with a strong frontend engineering background, currently leading digital transformation initiatives across public and enterprise sectors. At Infomentum, I’ve delivered end-to-end Salesforce solutions for clients like ACRO and Jersey Police, architecting secure and scalable Digital Experience Cloud portals and automating key workflows using Flows, Apex, and Process Builder. My work bridges technical execution and strategic impact—integrating Salesforce with internal systems, improving data efficiency, and elevating user experience. With a hands-on approach and a focus on clean, maintainable architecture, I bring both depth in platform development and the communication skills needed to drive collaboration across teams.",
   "subtitle": "HELLO, I'M DIEGO MAEOKA",
-  "cv": "/img/favicon.png",
+  "cv": "/img/cv-updated.pdf",
   "skills": [
     {
-      "name": "PHOTOSHOP, ILLUSTRATOR, SKETCH, ADOBE XD & FIGMA",
+      "name": "TYPESCRIPT, JAVASCRIPT, NODEJS",
       "percentage": 90
     },
     {
-      "name": "HTML5, CSS3, POSTCSS, SASS & SCSS",
+      "name": "REACTJS, NEXTJS, VUEJS, NUXTJS & ANGULAR 1",
+      "percentage": 80
+    },
+    {
+      "name": "PHOTOSHOP, ILLUSTRATOR, SKETCH & FIGMA",
+      "percentage": 90
+    },
+    {
+      "name": "HTML5, CSS3, TAILWINDCSS, POSTCSS, SASS & SCSS",
       "percentage": 95
     },
     {
-      "name": "JAVASCRIPT, NODEJS, REACTJS, VUEJS & ANGULAR",
+      "name": "PHP, LARAVEL & WORDPRESS",
       "percentage": 85
     },
     {
-      "name": "PHP, LARAVEL, JOOMLA & WORDPRESS",
-      "percentage": 82
+      "name": "MAGNOLIA CMS & LIFERAY PORTAL",
+      "percentage": 80
     },
     {
-      "name": "ORACLE WEBCENTER PORTAL, ORACLE WEBCENTER SITES, LIFERAY PORTAL",
-      "percentage": 75
-    },
-    {
-      "name": "GIT & BITBUCKET PIPELINES",
+      "name": "GIT, GITHUB ACTIONS, BITBUCKET PIPELINES",
       "percentage": 90
     },
     {
-      "name": "GULP JS & WEBPACK",
+      "name": "VITEJS, WEBPACK & GULP",
       "percentage": 90
     },
     {
       "name": "SQL & NOSQL",
       "percentage": 77
+    },
+    {
+      "name": "SALESFORCE ADMINISTRATION AND DEVELOPMENT (APEX AND SOQL)",
+      "percentage": 70
+    },
+    {
+      "name": "PYTHON",
+      "percentage": 65
+    },
+    {
+      "name": "JAVA & GROOVY",
+      "percentage": 65
     }
   ],
-  "thumbnail": "/img/me.jpg"
+  "thumbnail": "/img/1040524.jpg"
 }

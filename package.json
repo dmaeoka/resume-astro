@@ -1,5 +1,5 @@
 {
-	"name": "dokto",
+	"name": "resume",
 	"type": "module",
 	"version": "1.1.0",
 	"private": true,
@@ -12,29 +12,27 @@
 		"dev": "astro dev"
 	},
 	"dependencies": {
-		"@alpinejs/intersect": "^3.11.1",
-		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"@tailwindcss/line-clamp": "^0.4.2",
-		"@tailwindcss/typography": "^0.5.9",
-		"alpinejs": "^3.11.1",
+		"@alpinejs/intersect": "^3.14.9",
+		"@tailwindcss/vite": "^4.1.11",
+		"alpinejs": "^3.14.9",
 		"animate.css": "^4.1.1",
 		"google-maps": "^4.3.3",
 		"showdown": "^2.1.0",
-		"tailwindcss": "^3.2.6"
+		"tailwindcss": "^4.1.11"
 	},
 	"devDependencies": {
-		"@astrojs/mdx": "^0.17.2",
-		"@astrojs/node": "^5.0.4",
-		"@astrojs/tailwind": "^3.0.1",
-		"@types/lunr": "^2.3.4",
-		"astro": "^2.0.15",
-		"astro-compress": "^1.1.33",
-		"astro-netlify-cms": "^0.5.3",
-		"autoprefixer": "^10.4.13",
-		"lit": "^2.3.1",
+		"@astrojs/mdx": "^4.3.1",
+		"@astrojs/node": "^9.3.0",
+		"@astrojs/rss": "^4.0.12",
+		"@astrojs/sitemap": "^3.4.1",
+		"@tailwindcss/postcss": "^4.1.11",
+		"@types/lunr": "^2.3.7",
+		"astro": "^5.12.0",
+		"astro-netlify-cms": "^0.5.4",
+		"autoprefixer": "^10.4.21",
+		"lit": "^3.3.1",
 		"lunr": "^2.3.9",
-		"sass": "^1.58.3",
-		"tailwindcss-debug-screens": "^2.2.1",
-		"zod": "^3.20.6"
+		"sass": "^1.89.2",
+		"zod": "^4.0.5"
 	}
 }

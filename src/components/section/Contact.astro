@@ -1,7 +1,22 @@
 ---
+import { z } from 'zod';
 import Zigzag from "@components/base/Zigzag.astro";
-const contact = await Astro.glob('../../content/_contact.json')
-const {title, description, location } = contact[0]
+const contactSchema = z.object({
+	title: z.string(),
+	description: z.string(),
+	location: z.string(),
+});
+const contactImports = import.meta.glob('../../content/_contact.json', { eager: true });
+const rawContact = Object.values(contactImports)[0];
+const result = contactSchema.safeParse(rawContact);
+let title = '';
+let description = '';
+let location = '';
+if (result.success) {
+	({ title, description, location } = result.data);
+} else {
+	console.error("Invalid about.json schema", result.error.flatten());
+}
 const parsedLocation = JSON.parse(location)
 ---
 
@@ -18,7 +33,7 @@ const parsedLocation = JSON.parse(location)
 				</h2>
 				<p class="md:max-w-xl" set:html={description}></p>
 			</div>
-			<div class="section-title black font-black text-right uppercase text-xl absolute right-0 bottom-0">CONTACT.</div>
+			<div class="section-title text-7xl opacity-5 black font-black text-right uppercase absolute right-0 bottom-0">CONTACT.</div>
 		</div>
 		<div class="flex -mx-5">
 			<div class="lg:w-2/5 w-full px-5 lg:flex md:order-1 order-2 hidden">

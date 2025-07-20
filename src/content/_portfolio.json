@@ -3,6 +3,12 @@
   "description": "Here's a small hint of what I have done already!",
   "projects": [
     {
+      "title": "BAE SYSTEMS",
+      "thumbnail": "/img/baesystems.png",
+      "description": "Led front-end development for a scalable BAE Systems web solution using Magnolia CMS, TypeScript, and Alpine.js. Introduced Nuxt.js to enable a future-proof headless architecture, optimized performance, and improved user experience. Collaborated cross-functionally to deliver modular, editor-friendly components while upholding high standards for code quality, accessibility, and functionality.",
+      "job": "typescript, magnolia, alpinejs, nuxtjs"
+    },
+    {
       "title": "Intranet Boticario",
       "thumbnail": "/img/0d82c30a8b25456ba85760d2ab8fcc01.png",
       "description": "Intranet developed for Boticário group. I created the pages in psd, then in HTML and implemented in Sharepoint 2010.",
